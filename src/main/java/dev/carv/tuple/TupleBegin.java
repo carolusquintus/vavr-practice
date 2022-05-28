@@ -23,7 +23,7 @@ public class TupleBegin {
         log.debug("{}", t1._2());
         log.debug("{}", t1._3());
 
-        var tEntry = Tuple.of(new SimpleEntry(42, "foo"));
-        log.debug("{}", tEntry._1);
+        var t2Entry = Tuple.of(new SimpleEntry(42, "foo"));
+        log.debug("{}", t2Entry._1);
     }
 }
