@@ -1,11 +1,9 @@
 package dev.carv.option;
 
 import io.vavr.control.Option;
-
+import java.util.function.Consumer;
 import java.util.Optional;
 import java.util.Random;
-import java.util.function.Consumer;
-
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
