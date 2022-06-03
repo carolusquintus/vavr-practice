@@ -15,8 +15,8 @@ public class OptionSideEffects {
 
         var r = new Random();
 
-        Consumer<Integer> lucky =  i -> log.debug("Felling lucky {}", i);
-        Runnable badLuck        =  () -> log.debug("{}", "Bad luck");
+        Consumer<Integer> lucky = i -> log.debug("Felling lucky {}", i);
+        Runnable badLuck        = () -> log.debug("{}", "Bad luck");
 
         Option.of(r.nextBoolean() ? r.nextInt() : null)
             .peek(lucky)
